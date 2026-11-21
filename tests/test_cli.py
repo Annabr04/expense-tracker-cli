@@ -26,7 +26,8 @@ def test_add_rejects_non_positive_amount():
     assert result.exit_code == 1
     assert "Amount must be greater than 0" in result.stdout
 
-    result = runner.invoke(app, ["add", "-5", "--category", "food"])
+    # -- is required so Click/Typer does not treat -5 as an option
+    result = runner.invoke(app, ["add", "--", "-5", "--category", "food"])
     assert result.exit_code == 1
     assert "Amount must be greater than 0" in result.stdout
 
