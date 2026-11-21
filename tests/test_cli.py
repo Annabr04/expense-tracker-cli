@@ -21,6 +21,16 @@ def test_add_expense():
     assert "$15.50" in result.stdout
 
 
+def test_add_rejects_non_positive_amount():
+    result = runner.invoke(app, ["add", "0", "--category", "food"])
+    assert result.exit_code == 1
+    assert "Amount must be greater than 0" in result.stdout
+
+    result = runner.invoke(app, ["add", "-5", "--category", "food"])
+    assert result.exit_code == 1
+    assert "Amount must be greater than 0" in result.stdout
+
+
 def test_list_expenses():
     runner.invoke(app, ["add", "10", "--category", "food"])
     runner.invoke(app, ["add", "25", "--category", "transport"])
