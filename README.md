@@ -102,6 +102,19 @@ expense-tracker-cli/
 - Simple charts in the terminal
 - Web dashboard companion (FastAPI)
 
+
+## Tests
+
+```bash
+pytest -v
+```
+
+GitHub Actions runs that command on every push and pull request to `main`.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
+
 ---
 
 Built as a portfolio project for junior Python developer roles.
