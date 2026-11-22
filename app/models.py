@@ -1,11 +1,12 @@
 from dataclasses import dataclass
+from decimal import Decimal
 from typing import Optional
 
 
 @dataclass
 class Expense:
     id: int
-    amount: float
+    amount: Decimal
     category: str
     description: Optional[str]
     date: str
