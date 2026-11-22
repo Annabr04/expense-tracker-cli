@@ -4,6 +4,8 @@ A clean, practical command-line expense tracker built with **Python**, **Typer**
 
 Track daily spending, view summaries by category, and export your data — all from the terminal.
 
+> **Upgrading? Back up your DB before upgrading.** This version stores amounts as integer cents and migrates an existing `expenses.db` in place on the first command you run. Copy `expenses.db` somewhere safe first.
+
 **Requires Python 3.11 or later.** CI runs on Python 3.11; the suite is also verified on 3.13.
 
 ---
