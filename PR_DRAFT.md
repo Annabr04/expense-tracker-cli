@@ -5,7 +5,7 @@
 - **Repo:** https://github.com/Annabr04/expense-tracker-cli
 - **Base:** `origin/main` @ `2d7def845a438b5540bd1dfeacffbfedb48e7528` (`docs: add MIT license, .gitignore, and a tests section (#1)`)
 - **Branch:** `fix/qa-must-fixes` (local only; no upstream)
-- **Commit:** `053f79eebb6e81689830d21afc916da95fa7c68a`
+- **Commit:** `d2c14a54d8ad155c4f450352a24be8b17fd6fc82` (implementation commit on `fix/qa-must-fixes`; this draft file was then updated in a follow-up commit on the same branch)
 - **Source of truth:** `/workspace/qa-portfolio/QA_SUMMARY.md` (QA Engineer, 22 November 2026, ET)
 
 ## Test counts
